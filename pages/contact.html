@@ -7,7 +7,7 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>
+    <header id="navbar">
         <div class="me-img">
             <a href="../index.html" id="logo-link">
                 <img src="../images/eu.jpg" alt="me">
@@ -19,13 +19,26 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </header>
-    <main id="content">
-        <h2>Contact</h2>
+    <main id="contact-page">
+        <form action="" method="post">
+            <h2>Contact</h2>
+            <label for="">Name</label>
+            <input type="text" name="name">
+            <label for="">E-mail</label>
+            <input type="email" name="email">
+            <label for="">Phone Number</label>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <button type="submit">Register</button>
+        </form>
     </main>
     <footer>
-        <p>FullStack Developer - Bruno Rafael</p> 
-        <a href="./aboutme.html">About Me</a>
-        <a href="./contact.html">Contact</a>
+        <div class="footer-paragraph">
+            <p>FullStack Developer - Bruno Rafael</p> 
+        </div>
+        <div class="footer-links">
+            <a href="./aboutme.html">About Me</a>
+            <a href="./contact.html">Contact</a>
+        </div>
         <div class="social">
             <a href="https://github.com/nbhero" target="_blank">
                 <img src="../images/github-logo.png" alt="Github">
